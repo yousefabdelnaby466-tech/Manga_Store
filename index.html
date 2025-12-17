@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Yousef & Mostafa">
+    <title>Manga Store</title>
+    <style>
+        /* ---- أسلوب عام للجسم ---- */
+        body {
+            font-family: Arial, sans-serif; /* خط بسيط وسهل القراءة */
+            background-color: #f0f4f8; /* لون خلفية مريح للعين */
+            color: #333; /* لون نص داكن للقراءة المريحة */
+            margin: 0;
+            padding: 0;
+        }
+
+        /* ---- ترويسة الموقع ---- */
+        header {
+            background-color: #6c5ce7; /* لون مريح للعين */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        /* ---- حاوية الكتب ---- */
+        .books-container {
+            display: flex; /* ترتيب الكتب بشكل أفقي */
+            flex-wrap: wrap; /* لو المساحة صغيرة، ينزل للصف التالي */
+            justify-content: center;
+            padding: 20px;
+            gap: 20px; /* مسافة بين الكتب */
+        }
+
+        /* ---- كل بطاقة كتاب ---- */
+        .book {
+            background-color: white;
+            border-radius: 10px; /* حواف دائرية */
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* ظل خفيف */
+            width: 200px;
+            padding: 15px;
+            text-align: center;
+            transition: transform 0.2s; /* حركة خفيفة عند المرور */
+        }
+
+        .book:hover {
+            transform: scale(1.05); /* تكبير خفيف عند المرور */
+        }
+
+        .book img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .book h3 {
+            font-size: 18px;
+            margin: 10px 0 5px 0;
+        }
+
+        .book p {
+            font-size: 14px;
+            color: #666; /* لون نص ثانوي */
+        }
+    </style>
+</head>
+<body>
+    <!-- ترويسة الموقع -->
+    <header>
+        <h1>Manga Store</h1>
+        <p> "Read the best manga"</p>
+    </header>
+
+  <a href="book1.html" class="book-link"><!-- حاوية الكتب -->
+    <div class="books-container">
+        <!-- بطاقة كتاب الاول -->
+        <div class="book">
+            <img src="https://images.thalia.media/07/-/684aefcbb7f54e49a4fd8fc58fde9794/vagabond-01-taschenbuch-takehiko-inoue.jpeg" alt="Book 1">
+            
+            <h3> vagabond chapter 1 </h3>
+            <P>200 EGP</P>
+            <p>بداية القصة مع شينمين تاكيزو الشاب العنيف والمتهور، اللي بيعيش وسط الفوضى بعد معركة سيكيجاهارا. بنشوف شخصيته القاسية وحبه للقتال، ورغبته إنه يبقى أقوى محارب تحت السماء، من غير أي وعي حقيقي بمعنى القوة.</p>
+        </div></a>
+
+
+        <div class="book">
+            <img src="https://comicvine.gamespot.com/a/uploads/scale_medium/6/67663/5581017-02.jpg" alt="Book 2">
+            <h3> vagabond chapter 2</h3>
+            <P>400 EGP</P>
+            <p>تاكيزو يبدأ يواجه نتائج عنفه واندفاعه، والمجتمع حواليه بيشوفه كخطر مش بطل. الشابتر بيبرز الصراع بينه وبين العالم، وبيوضح قد إيه طريق القوة اللي اختاره مليان رفض ووحدة.</p>
+        </div>
+
+        <div class="book">
+            <img src="https://tse1.mm.bing.net/th/id/OIP.BIVCJnE3cuNGBKtOHqNPPQHaKK?cb=ucfimg2&ucfimg=1&w=761&h=1045&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Book 3">
+            <h3> vagabond chapter 3</h3>
+            <p>400 EGP </p>
+            <p>في هذا الشابتر تتصاعد حدة الصراع حول شينمين تاكيزو بعد أن يتحوّل من شاب متهور إلى شخص مطارد ومكروه من الجميع. بنشوفه محاصر بالخوف والرفض، ويبدأ إحساسه بالقوة يهتز لأول مرة.
+الشابتر يركّز على العزلة والضياع، ويمهّد نفسيًا لانكسار الصورة القديمة عن القوة، ولبداية رحلة التغيير الحقيقية التي ستعيد تشكيل هويته لاحقًا باسم مياموتو موساشي.</p>
+        </div>
+    </div>
+</body>
+</html>
